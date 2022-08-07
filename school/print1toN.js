@@ -10,15 +10,15 @@ class Solution{
     num = '';
     count = 0;
     printNos(N){
-       let x;
+       let X;
        this.count += 1;
        if (this.count === 1) {
-         x = N;
+         X = N;
        }
        if (N === 0) return;
        this.printNos(N - 1);
        this.num += N + ' ';
-       if (N === x) {
+       if (N === X) {
         console.log(this.num);
        }
     }
