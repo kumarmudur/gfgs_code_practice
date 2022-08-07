@@ -7,8 +7,9 @@
 
 function convertFive(n) {
     let newNum = n.toString().split('');
+    let length = newNum.length;
     let result = [];
-    for (let i = 0; i < newNum.length; i++) {
+    for (let i = 0; i < length; i++) {
         if (newNum[i] == 0) result.push(5);
         else result.push(newNum[i]);
     }
