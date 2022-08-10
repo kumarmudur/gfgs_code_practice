@@ -7,6 +7,7 @@
  * @returns {number}
 */
 
+// time: O(n) | space: O(1)
 class Solution{
     countOfElements(arr,n, x){
         let count = 0;
