@@ -18,4 +18,14 @@ class Solution {
     }
 }
 
+// Solution 2
+// time: O(n) | space: O(1)
+class Solution {
+    seriesSum(n) {
+        let sum = 0;
+        sum = (n * (n + 1) / 2);
+        return sum;
+    }
+}
+
 console.log(seriesSum(5));
