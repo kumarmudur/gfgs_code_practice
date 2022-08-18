@@ -9,7 +9,7 @@
 // Solution
 // time: O(n) | space: O(n)
 class Solution{
-    valueEqualToIndex(arr,n){
+    valueEqualToIndex(arr, n) {
       let results = []
       for (let i = 0; i < n; i++) {
         if (arr[i] === i + 1) results.push(i + 1);
