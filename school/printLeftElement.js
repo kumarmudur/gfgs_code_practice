@@ -16,4 +16,11 @@ function leftElement(arr, n) {
     }
 };
 
+// Solution 2
+function leftElement1(arr, n) { 
+    arr.sort((a, b) => a - b);
+    let mid = Math.floor((n - 1) / 2);
+    return arr[mid];
+}
+
 console.log(leftElement([8, 1, 2, 9, 4, 3, 7, 5], 8));
