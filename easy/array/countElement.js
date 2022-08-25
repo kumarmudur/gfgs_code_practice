@@ -20,6 +20,28 @@ const getCount = (arr, val) => {
 }
 
 
+// Solution 2
+// time: O((m + n) * log n) | space: O(1)
+function binarySearch(arr, l, h, x) {
+    while (l <= h) {
+        let mid = Math.floor((l + h) / 2);
+
+        if (arr[mid] <= x) l = mid + 1;
+        else h = mid - 1;
+    }
+    return h;
+}
+
+function countEleLessThanOrEqual1(arr1,arr2,m,n){
+    arr2.sort((a, b) => a - b);
+
+    for (let i = 0; i < m; i++) {
+        let index = binarySearch(arr2, 0, n - 1, arr1[i]);
+        console.log('index', index);
+        arr1[i] = index + 1;
+    }
+    return arr1;
+}
 
 
 
