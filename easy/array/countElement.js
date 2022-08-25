@@ -25,7 +25,6 @@ const getCount = (arr, val) => {
 function binarySearch(arr, l, h, x) {
     while (l <= h) {
         let mid = Math.floor((l + h) / 2);
-
         if (arr[mid] <= x) l = mid + 1;
         else h = mid - 1;
     }
@@ -37,7 +36,6 @@ function countEleLessThanOrEqual1(arr1,arr2,m,n){
 
     for (let i = 0; i < m; i++) {
         let index = binarySearch(arr2, 0, n - 1, arr1[i]);
-        console.log('index', index);
         arr1[i] = index + 1;
     }
     return arr1;
