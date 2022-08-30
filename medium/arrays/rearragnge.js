@@ -28,7 +28,7 @@ function rearrange(arr, n) {
             right--;
         } else {
             arr[i] = result[left];
-            left++
+            left++;
         }
     }
     return arr;
